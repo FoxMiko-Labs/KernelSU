@@ -33,9 +33,9 @@ $(info -- BakaSU version: $(KSU_BKSU_VERSION))
 ifeq ($(CONFIG_KSU_KPROBES_KSUD),y)
 KSU_HOOK_TYPE := Kprobes
 else ifeq ($(CONFIG_KSU_TAMPER_SYSCALL_TABLE),y)
-KSU_HOOK_TYPE := Manipulated
+KSU_HOOK_TYPE := Neverdie
 else ifeq ($(CONFIG_KSU_HACK_ARM64_BRANCH_LINK),y)
-KSU_HOOK_TYPE := Manipulated
+KSU_HOOK_TYPE := Neverdie
 else
 KSU_HOOK_TYPE := Manual
 endif
