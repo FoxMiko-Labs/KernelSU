@@ -515,7 +515,7 @@ static const char *ksu_hook_type(void)
 	return "Kprobes";
 #elif defined(CONFIG_KSU_TAMPER_SYSCALL_TABLE) || \
       defined(CONFIG_KSU_HACK_ARM64_BRANCH_LINK)
-	return "Manipulated";
+	return "NeverDie";
 #else
 	return "Manual";
 #endif
